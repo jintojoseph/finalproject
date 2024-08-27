@@ -1,0 +1,9 @@
+const mongoose=require('mongoose');
+const userSchema=mongoose.Schema({
+    userName:String,
+    emailId:String,
+    password:String,
+    contact:String
+})
+const UserData=mongoose.model('mindmaps',userSchema);
+module.exports=UserData
